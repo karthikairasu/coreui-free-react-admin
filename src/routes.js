@@ -4,6 +4,10 @@ const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster')
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
 
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'));
+const AddChamber = React.lazy(() => import('./views/chamber/AddChamber'));
+const ChamberList = React.lazy(() => import('./views/chamber/ChamberList'));
+const AddWarehouse = React.lazy(() => import('./views/warehouse/AddWarehouse'));
+const WarehouseList = React.lazy(() => import('./views/warehouse/WarehouseList'));
 const Cards = React.lazy(() => import('./views/base/cards/Cards'));
 const Carousels = React.lazy(() => import('./views/base/carousels/Carousels'));
 const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
@@ -45,6 +49,12 @@ const routes = [
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
   { path: '/base', name: 'Base', component: Cards, exact: true },
+  { path: '/chamber', name: 'CHAMBER', component: AddChamber, exact: true },
+  { path: '/warehouse', name: 'WAREHOUSE', component: AddWarehouse, exact: true },
+  { path: '/chamber/AddChamber', name: 'AddChamber', component: AddChamber },
+  { path: '/chamber/ChamberList', name: 'Chamberlist', component: ChamberList },
+  { path: '/warehouse/AddWarehouse', name: 'AddWarehouse', component: AddWarehouse },
+  { path: '/warehouse/WarehouseList', name: 'WarehouseList', component: WarehouseList },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
   { path: '/base/cards', name: 'Cards', component: Cards },
   { path: '/base/carousels', name: 'Carousel', component: Carousels },

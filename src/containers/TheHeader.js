@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
+import '../assets/style.css'
 import {
   CHeader,
   CToggler,
@@ -68,8 +69,8 @@ const TheHeader = () => {
 
       <CHeaderNav className="px-3">
         {/* <TheHeaderDropdownNotif/>
-        <TheHeaderDropdownTasks/> */}
-        <TheHeaderDropdownMssg/>
+        <TheHeaderDropdownTasks/> 
+        <TheHeaderDropdownMssg/> */}
         <TheHeaderDropdown/>
       </CHeaderNav>
 
