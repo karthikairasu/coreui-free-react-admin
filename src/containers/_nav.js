@@ -3,14 +3,36 @@ import CIcon from '@coreui/icons-react'
 
 const _nav =  [
   {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Monitoring']
+  },
+  {
     _tag: 'CSidebarNavItem',
-    name: 'Dashboard',
+    name: 'DASHBOARD',
     to: '/dashboard',
     icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
     badge: {
       color: 'info',
       text: 'NEW',
     }
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'REPORTS',
+    to: '/charts',
+    icon: 'cil-list'
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'DEVICES',
+    to: '/',
+    icon: 'cil-devices'
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'USERS',
+    to: '/',
+    icon: 'cil-user'
   },
   // {
   //   _tag: 'CSidebarNavTitle',
@@ -28,24 +50,26 @@ const _nav =  [
   //   to: '/theme/typography',
   //   icon: 'cil-pencil',
   // },
-  {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Components']
-  },
+  // {
+  //   _tag: 'CSidebarNavTitle',
+  //   _children: ['Components']
+  // },
   {
     _tag: 'CSidebarNavDropdown',
     name: 'CHAMBER',
     route: '/chamber',
-    icon: 'cil-puzzle',
+    icon: 'cil-square',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'ADD CHAMBER',
+        icon: 'cil-hand-point-right',
         to: '/chamber/AddChamber',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'CHAMBER LIST',
+        icon: 'cil-hand-point-right',
         to: '/chamber/ChamberList',
       },
     ],
@@ -54,19 +78,57 @@ const _nav =  [
     _tag: 'CSidebarNavDropdown',
     name: 'WAREHOUSE',
     route: '/warehouse',
-    icon: 'cil-cursor',
+    icon: 'cil-building',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'ADD WAREHOUSE',
+        icon: 'cil-hand-point-right',
         to: '/warehouse/AddWarehouse',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'WAREHOUSE LIST',
+        icon: 'cil-hand-point-right',
         to: '/warehouse/WarehouseList',
       }
     ],
+  },
+   {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Pages']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: 'CONFIGURATION',
+    route: '/warehouse',
+    icon: 'cil-settings',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'DEVICES',
+        icon: 'cil-hand-point-right',
+        to: '',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'ALERTS',
+        icon: 'cil-hand-point-right',
+        to: '',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'USERS',
+        icon: 'cil-hand-point-right',
+        to: '',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'ABOUTS US',
+    to: '/',
+    icon: 'cil-info'
   },
   // {
   //  _tag: 'CSidebarNavItem',
