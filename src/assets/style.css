@@ -13,3 +13,13 @@ html:not([dir="rtl"])
   .c-sidebar-nav-dropdown-toggle {
   padding-left: 80px;
 }
+table thead th {
+  padding: 6px 6px !important;
+  text-align: center;
+  border: 2px dotted #ffffff !important;
+}
+table tbody td {
+  padding: 6px 6px !important;
+  text-align: center;
+  border: 2px dotted #c6c0f5 !important;
+}
