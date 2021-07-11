@@ -41,43 +41,21 @@ const Devices = () => {
         <div className="col-md-4 col-lg-3">
           <div className="card text-center px-2 py-4" style={{}}>
             <div className="card-body">
-              <h5> <strong>Device 1</strong></h5>
-              <span className="badge badge-success">&ensp;</span>
+              <div>
+                <strong>Device # 10001</strong>
+              </div>
+              <div>
+                <small>Riyadh</small>
+              </div>
+              <div>
+                <span>Status : Online</span> &nbsp;
+                <span className="badge badge-success">&ensp;</span>
+                <span><CIcon className="cil-devices"></CIcon></span>
+              </div>
             </div>
           </div>     
         </div>
-        <div className="col-md-4 col-lg-3">
-          <div className="card text-center px-2 py-4" style={{}}>
-            <div className="card-body">
-              <h5> <strong>Device 2</strong></h5>
-              <span className="badge badge-success">&ensp;</span>
-            </div>
-          </div>     
-        </div>
-        <div className="col-md-4 col-lg-3">
-          <div className="card text-center px-2 py-4" style={{}}>
-            <div className="card-body">
-              <h5> <strong>Device 3</strong></h5>
-              <span className="badge badge-success">&ensp;</span>
-            </div>
-          </div>     
-        </div>
-        <div className="col-md-4 col-lg-3">
-          <div className="card text-center px-2 py-4" style={{}}>
-            <div className="card-body">
-              <h5> <strong>Device 4</strong></h5>
-              <span className="badge badge-warning">&ensp;</span>
-            </div>
-          </div>     
-        </div>
-        <div className="col-md-4 col-lg-3">
-          <div className="card text-center px-2 py-4" style={{}}>
-            <div className="card-body">
-              <h5> <strong>Device 5</strong></h5>
-              <span className="badge badge-success">&ensp;</span>
-            </div>
-          </div>     
-        </div>
+        
     </div>
   )
 }
