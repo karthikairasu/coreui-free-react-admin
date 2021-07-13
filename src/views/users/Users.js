@@ -39,14 +39,14 @@ const Users = () => {
 
   return (
     <CRow>
-      <CCol xl={6}>
+      <CCol xl={12}>
         <CCard>
           <CCardHeader>
             Users
-            <small className="text-muted"> example</small>
+            <small className="text-muted"> </small>
           </CCardHeader>
           <CCardBody>
-          <CDataTable
+          {/* <CDataTable
             items={usersData}
             fields={[
               { key: 'name', _classes: 'font-weight-bold' },
@@ -75,7 +75,25 @@ const Users = () => {
             pages={5}
             doubleArrows={false} 
             align="center"
-          />
+          /> */}
+          <table class="table table-bordered">
+                    <thead>
+                    <tr className="table-primary">
+                        <th>#</th>
+                        <th>Name</th> 
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>John</td>
+                            <td>Admin</td>
+                            <td><span className="badge badge-success">active</span></td>
+                        </tr>
+                    </tbody>
+                </table>
           </CCardBody>
         </CCard>
       </CCol>
