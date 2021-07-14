@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
 import '../assets/style.css';
 import Time from './time';
+
 import {
   CHeader,
   CToggler,
@@ -94,7 +95,7 @@ const TheHeader = () => {
             <CLink className="c-subheader-nav-link" href="#">
               <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
             </CLink> */}
-            <div><Time/></div>
+            {/* <div><Time/></div> */}
           </div>
       </CSubheader>
     </CHeader>
