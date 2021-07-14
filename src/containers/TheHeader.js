@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
 import '../assets/style.css';
-import Time from '../assets/time.js';
+import Time from './time';
 import {
   CHeader,
   CToggler,
