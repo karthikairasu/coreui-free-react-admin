@@ -1,7 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
-import '../assets/style.css'
+import '../assets/style.css';
+import Time from '../assets/time.js';
 import {
   CHeader,
   CToggler,
@@ -24,6 +25,7 @@ import {
   TheHeaderDropdownNotif,
   TheHeaderDropdownTasks
 }  from './index'
+import { render } from 'enzyme/build';
 
 const TheHeader = () => {
   const dispatch = useDispatch()
@@ -38,7 +40,6 @@ const TheHeader = () => {
     const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
     dispatch({type: 'set', sidebarShow: val})
   }
-
   return (
     <CHeader withSubheader>
       <CToggler
@@ -93,10 +94,11 @@ const TheHeader = () => {
             <CLink className="c-subheader-nav-link" href="#">
               <CIcon name="cil-settings" alt="Settings" />&nbsp;Settings
             </CLink> */}
+            <div><Time/></div>
           </div>
       </CSubheader>
     </CHeader>
   )
 }
 
-export default TheHeader
+export default TheHeader;
