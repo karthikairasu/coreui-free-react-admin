@@ -101,34 +101,40 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: 'CONFIGURATION',
-    route: '/warehouse',
+    route: '/configuration',
     icon: 'cil-settings',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: 'DEVICES',
         icon: 'cil-hand-point-right',
-        to: '',
+        to: '/configuration/DevicesList',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'ALERTS',
         icon: 'cil-hand-point-right',
-        to: '',
+        to: '/configuration/AlertsList',
       },
       {
         _tag: 'CSidebarNavItem',
         name: 'USERS',
         icon: 'cil-hand-point-right',
-        to: '',
+        to: '/configuration/UserList',
       }
     ],
   },
+  // {
+  //   _tag: 'CSidebarNavItem',
+  //   name: 'ABOUTS US',
+  //   to: '/aboutus/AboutUs',
+  //   icon: 'cil-info'
+  // },
   {
     _tag: 'CSidebarNavItem',
-    name: 'ABOUTS US',
-    to: '/',
-    icon: 'cil-info'
+    name: 'HELP',
+    to: '/help/Help',
+    icon: 'cil-speech'
   },
   // {
   //  _tag: 'CSidebarNavItem',

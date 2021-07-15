@@ -14,6 +14,14 @@ const Collapses = React.lazy(() => import('./views/base/collapses/Collapses'));
 const BasicForms = React.lazy(() => import('./views/base/forms/BasicForms'));
 const Reports = React.lazy(() => import('./views/reports/Reports'));
 const Devices = React.lazy(() => import('./views/devices/Devices'));
+const DevicesList = React.lazy(() => import('./views/configuration/DevicesList'));
+const AlertsList = React.lazy(() => import('./views/configuration/AlertsList'));
+const UsersList = React.lazy(() => import('./views/configuration/UsersList'));
+const AddDevices = React.lazy(() => import('./views/configuration/AddDevices'));
+const AddAlerts = React.lazy(() => import('./views/configuration/AddAlerts'));
+const AddUsers = React.lazy(() => import('./views/configuration/AddUsers'));
+const AboutUs = React.lazy(() => import('./views/aboutus/AboutUs'));
+const Help = React.lazy(() => import('./views/help/Help'));
 
 
 const Jumbotrons = React.lazy(() => import('./views/base/jumbotrons/Jumbotrons'));
@@ -93,7 +101,16 @@ const routes = [
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
   { path: '/reports/Reports', name: 'Reports', component: Reports },
-  { path: '/devices/Devices', name: 'Devices', component: Devices }
+  { path: '/devices/Devices', name: 'Devices', component: Devices },
+  { path: '/Configuration', name: 'Configuration', component: DevicesList, exact: true  },
+  { path: '/Configuration/DevicesList', name: 'DevicesList', component: DevicesList },
+  { path: '/Configuration/AlertsList', name: 'AlertsList', component: AlertsList },
+  { path: '/Configuration/UsersList', name: 'UsersList', component: UsersList },
+  { path: '/Configuration/AddDevices', name: 'AddDevices', component: AddDevices  },
+  { path: '/Configuration/AddAlerts', name: 'AddAlerts', component: AddAlerts },
+  { path: '/Configuration/AddUsers', name: 'AddUsers', component: AddUsers },
+  { path: '/aboutus/AboutUs', name: 'AboutUs', component: AboutUs },
+  { path: '/help/Help', name: 'Help', component: Help }
 ];
 
 export default routes;
