@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class AddAlerts extends Component {
+class EditAlert extends Component {
     render() {
         return (
             <div>
@@ -9,7 +9,7 @@ class AddAlerts extends Component {
                         <div className="card-header">
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="">
-                                    <h4><strong>Add Alert Configuration</strong></h4>
+                                    <h4><strong>Edit Alert Configuration</strong></h4>
                                 </div>
                             </div>
                         </div>
@@ -115,10 +115,10 @@ class AddAlerts extends Component {
                             </form>
                         </div>
                     </div>
-                </div>   
+                </div>
             </div>
         )
     }
 }
 
-export default AddAlerts;
+export default EditAlert;

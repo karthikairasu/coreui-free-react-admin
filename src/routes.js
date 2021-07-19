@@ -21,6 +21,7 @@ const AddDevices = React.lazy(() => import('./views/configuration/AddDevices'));
 const AddAlerts = React.lazy(() => import('./views/configuration/AddAlerts'));
 const AddUsers = React.lazy(() => import('./views/configuration/AddUsers'));
 const EditDevice = React.lazy(() => import('./views/configuration/EditDevice'));
+const EditAlert = React.lazy(() => import('./views/configuration/EditAlert'));
 const AboutUs = React.lazy(() => import('./views/aboutus/AboutUs'));
 const Help = React.lazy(() => import('./views/help/Help'));
 
@@ -111,6 +112,7 @@ const routes = [
   { path: '/Configuration/AddAlerts', name: 'AddAlerts', component: AddAlerts },
   { path: '/Configuration/AddUsers', name: 'AddUsers', component: AddUsers },
   { path: '/Configuration/EditDevice', name: 'EditDevice', component: EditDevice  },
+  { path: '/Configuration/EditAlert', name: 'EditAlert', component: EditAlert  },
   { path: '/aboutus/AboutUs', name: 'AboutUs', component: AboutUs },
   { path: '/help/Help', name: 'Help', component: Help }
 ];
