@@ -55,44 +55,16 @@ const _nav =  [
   //   _children: ['Components']
   // },
   {
-    _tag: 'CSidebarNavDropdown',
+    _tag: 'CSidebarNavItem',
     name: 'CHAMBER',
-    route: '/chamber',
-    icon: 'cil-square',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'ADD CHAMBER',
-        icon: 'cil-hand-point-right',
-        to: '/chamber/AddChamber',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'CHAMBER LIST',
-        icon: 'cil-hand-point-right',
-        to: '/chamber/ChamberList',
-      },
-    ],
+    to: '/chamber/ChamberList',
+    icon: 'cil-square'
   },
   {
-    _tag: 'CSidebarNavDropdown',
+    _tag: 'CSidebarNavItem',
     name: 'WAREHOUSE',
-    route: '/warehouse',
-    icon: 'cil-building',
-    _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'ADD WAREHOUSE',
-        icon: 'cil-hand-point-right',
-        to: '/warehouse/AddWarehouse',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: 'WAREHOUSE LIST',
-        icon: 'cil-hand-point-right',
-        to: '/warehouse/WarehouseList',
-      }
-    ],
+    to: '/warehouse/WarehouseList',
+    icon: 'cil-building'
   },
    {
     _tag: 'CSidebarNavTitle',
@@ -121,6 +93,18 @@ const _nav =  [
         name: 'USERS',
         icon: 'cil-hand-point-right',
         to: '/configuration/UsersList',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'CHAMBER',
+        icon: 'cil-hand-point-right',
+        to: '/configuration/ChambersList',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: 'WAREHOUSE',
+        icon: 'cil-hand-point-right',
+        to: '/configuration/WarehousesList',
       }
     ],
   },

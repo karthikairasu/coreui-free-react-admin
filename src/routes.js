@@ -4,9 +4,7 @@ const Toaster = React.lazy(() => import('./views/notifications/toaster/Toaster')
 const Tables = React.lazy(() => import('./views/base/tables/Tables'));
 
 const Breadcrumbs = React.lazy(() => import('./views/base/breadcrumbs/Breadcrumbs'));
-const AddChamber = React.lazy(() => import('./views/chamber/AddChamber'));
 const ChamberList = React.lazy(() => import('./views/chamber/ChamberList'));
-const AddWarehouse = React.lazy(() => import('./views/warehouse/AddWarehouse'));
 const WarehouseList = React.lazy(() => import('./views/warehouse/WarehouseList'));
 const Cards = React.lazy(() => import('./views/base/cards/Cards'));
 const Carousels = React.lazy(() => import('./views/base/carousels/Carousels'));
@@ -23,6 +21,12 @@ const AddUsers = React.lazy(() => import('./views/configuration/AddUsers'));
 const EditDevice = React.lazy(() => import('./views/configuration/EditDevice'));
 const EditAlert = React.lazy(() => import('./views/configuration/EditAlert'));
 const EditUser = React.lazy(() => import('./views/configuration/EditUser'));
+const ChambersList = React.lazy(() => import('./views/configuration/ChambersList'));
+const AddChamber = React.lazy(() => import('./views/configuration/AddChamber'));
+const EditChamber = React.lazy(() => import('./views/configuration/EditChamber'));
+const WarehousesList = React.lazy(() => import('./views/configuration/WarehousesList'));
+const AddWarehouse = React.lazy(() => import('./views/configuration/AddWarehouse'));
+const EditWarehouse = React.lazy(() => import('./views/configuration/EditWarehouse'));
 const AboutUs = React.lazy(() => import('./views/aboutus/AboutUs'));
 const Help = React.lazy(() => import('./views/help/Help'));
 
@@ -65,9 +69,7 @@ const routes = [
   { path: '/base', name: 'Base', component: Cards, exact: true },
   { path: '/chamber', name: 'CHAMBER', component: AddChamber, exact: true },
   { path: '/warehouse', name: 'WAREHOUSE', component: AddWarehouse, exact: true },
-  { path: '/chamber/AddChamber', name: 'AddChamber', component: AddChamber },
   { path: '/chamber/ChamberList', name: 'Chamberlist', component: ChamberList },
-  { path: '/warehouse/AddWarehouse', name: 'AddWarehouse', component: AddWarehouse },
   { path: '/warehouse/WarehouseList', name: 'WarehouseList', component: WarehouseList },
   { path: '/base/breadcrumbs', name: 'Breadcrumbs', component: Breadcrumbs },
   { path: '/base/cards', name: 'Cards', component: Cards },
@@ -115,6 +117,12 @@ const routes = [
   { path: '/Configuration/EditDevice', name: 'EditDevice', component: EditDevice  },
   { path: '/Configuration/EditAlert', name: 'EditAlert', component: EditAlert  },
   { path: '/Configuration/EditUser', name: 'EditUser', component: EditUser  },
+  { path: '/Configuration/ChambersList', name: 'ChambersList', component: ChambersList  },
+  { path: '/Configuration/AddChamber', name: 'AddChamber', component: AddChamber  },
+  { path: '/Configuration/EditChamber', name: 'EditChamber', component: EditChamber  },
+  { path: '/Configuration/WarehousesList', name: 'WarehousesList', component: WarehousesList  },
+  { path: '/Configuration/AddWarehouse', name: 'AddWarehouse', component: AddWarehouse  },
+  { path: '/Configuration/EditWarehouse', name: 'EditWarehouse', component: EditWarehouse  },
   { path: '/aboutus/AboutUs', name: 'AboutUs', component: AboutUs },
   { path: '/help/Help', name: 'Help', component: Help }
 ];

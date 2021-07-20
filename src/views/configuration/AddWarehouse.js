@@ -3,36 +3,14 @@ import {
   CButton,
   CCard,
   CCardBody,
-  CCardFooter,
   CCardHeader,
   CCol,
-  CCollapse,
-  CDropdownItem,
-  CDropdownMenu,
-  CDropdownToggle,
-  CFade,
-  CForm,
   CFormGroup,
-  CFormText,
-  CValidFeedback,
-  CInvalidFeedback,
-  CTextarea,
   CInput,
-  CInputFile,
-  CInputCheckbox,
-  CInputRadio,
-  CInputGroup,
-  CInputGroupAppend,
-  CInputGroupPrepend,
-  CDropdown,
-  CInputGroupText,
   CLabel,
   CSelect,
-  CRow,
-  CSwitch
-} from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import { DocsLink } from 'src/reusable'
+  CRow
+} from '@coreui/react';
 
 const AddWarehouse = () => {
   return (
@@ -48,67 +26,67 @@ const AddWarehouse = () => {
             <CCardBody>
                 <CRow>
                     <CCol xs="6">
-                        <CFormGroup>
+                    <CFormGroup>
                             <CLabel htmlFor="name">Name  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="name" placeholder="" />
+                            <CInput type="text" className="form-control-sm" id="name" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="address">Address  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="address" placeholder="" />
+                            <CInput type="text" className="form-control-sm" id="address" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="long">Longitude  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="long" placeholder="" />
+                            <CInput type="number" className="form-control-sm" id="long" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="land">Land Coordinates Y  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="land" placeholder="" />
+                            <CInput type="text" className="form-control-sm" id="land" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="location">Location Time  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="location" placeholder="" />
+                            <CInput type="number" className="form-control-sm" id="location" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="phone">Phone  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="phone" placeholder="" />
+                            <CInput type="number" className="form-control-sm" id="phone" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="email">Email ID</CLabel>
-                            <CInput id="email" placeholder="" />
+                            <CLabel htmlFor="email">Email ID  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CInput type="email" className="form-control-sm" id="email" placeholder="" />
                         </CFormGroup>
                     </CCol>
                     <CCol xs="6">
                         <CFormGroup>
                             <CLabel htmlFor="city">City  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="city" placeholder="" />
+                            <CInput type="text" className="form-control-sm" id="city" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
                             <CLabel htmlFor="lat">Latitude  <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="lat" placeholder="" />
+                            <CInput type="number" className="form-control-sm" id="lat" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="landx">Land Coordinates X    <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="landx" placeholder="" />
+                            <CLabel htmlFor="landx">Land Coordinates X  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CInput type="text" className="form-control-sm" id="landx" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="cat">Category    <span style={{color: 'red'}}>*</span></CLabel>
-                            <CSelect custom name="cat" id="cat">
+                            <CLabel htmlFor="cat">Category  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CSelect custom name="cat" className="form-control-sm" id="cat">
                             <option>Category 1</option>
                             <option>Category 2</option>
                             <option>Category 3</option>
                             </CSelect>
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="location">Operating Company Warehouse Id    <span style={{color: 'red'}}>*</span></CLabel>
-                            <CInput id="location" placeholder="" />
+                            <CLabel htmlFor="warehouseid">Operating Company Warehouse Id  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CInput type="text" className="form-control-sm" id="warehouseid" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="phone">Manager Phone</CLabel>
-                            <CInput id="phone" placeholder="" />
+                            <CLabel htmlFor="mphone">Manager Phone  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CInput type="number" className="form-control-sm" id="mphone" placeholder="" />
                         </CFormGroup>
                         <CFormGroup>
-                            <CLabel htmlFor="email">Land Area</CLabel>
-                            <CInput id="email" placeholder="" />
+                            <CLabel htmlFor="area">Land Area  <span style={{color: 'red'}}>*</span></CLabel>
+                            <CInput type="text" className="form-control-sm" id="area" placeholder="" />
                         </CFormGroup>
                     </CCol>
                     <CCol>
