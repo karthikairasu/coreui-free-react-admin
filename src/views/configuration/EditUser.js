@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-class AddUsers extends Component {
+class EditUser extends Component {
     render() {
         return (
             <div>
@@ -9,7 +9,7 @@ class AddUsers extends Component {
                         <div className="card-header">
                             <div className="d-flex align-items-center justify-content-between">
                                 <div className="">
-                                    <h4><strong>Add User</strong></h4>
+                                    <h4><strong>Edit User Account</strong></h4>
                                 </div>
                             </div>
                         </div>
@@ -87,5 +87,4 @@ class AddUsers extends Component {
     }
 }
 
-
-export default AddUsers;
+export default EditUser;

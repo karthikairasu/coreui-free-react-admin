@@ -120,7 +120,7 @@ const _nav =  [
         _tag: 'CSidebarNavItem',
         name: 'USERS',
         icon: 'cil-hand-point-right',
-        to: '/configuration/UserList',
+        to: '/configuration/UsersList',
       }
     ],
   },
