@@ -43,6 +43,14 @@ class AddDevices extends Component {
                                             <label for="sensor">Sensor Type  <span style={{color: 'red'}}>*</span></label>
                                             <input className="form-control form-control-sm" id="sensor" />
                                         </div>
+                                        <div className="from-group mb-2">
+                                            <label for="sensor">Sensor<span style={{color: 'red'}}>*</span></label>
+                                            <div className="input-group">
+                                            <input type="text" aria-label="" id="sensor" className="form-control form-control-sm" placeholder="Sensor"/>
+                                            <input type="text" aria-label="" id="unit" className="form-control form-control-sm" placeholder="Unit"/>
+                                            <button class="btn btn-info btn-sm" type="button">Add</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="col-12 text-center py-2">
                                         <button className="btn btn-success rounded-pill" type="button">Submit</button>  

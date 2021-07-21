@@ -16,10 +16,10 @@ class AddAlerts extends Component {
                         <div className="card-body"> 
                             <form>
                                 <div className="row">
-                                    <div className="col-6">
+                                    <div className="col-3">
                                         <div className="from-group mb-2">
                                             <label for="warehouse">Warehouse  <span style={{color: 'red'}}>*</span></label>
-                                            <select className="form-control" id="warehouse">
+                                            <select className="form-control form-control-sm" id="warehouse">
                                                 <option value="">Choose warehouse</option>
                                                 <option value="">Riyadh</option>
                                                 <option value="">Dammam</option>
@@ -27,14 +27,32 @@ class AddAlerts extends Component {
                                             </select>
                                         </div>
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-3">
                                         <div className="from-group mb-2">
                                             <label for="chamber">Chamber  <span style={{color: 'red'}}>*</span></label>
-                                            <select className="form-control" id="chamber">
+                                            <select className="form-control form-control-sm" id="chamber">
                                                 <option value="">Choose Chamber</option>
                                                 <option value="">Chamber 1</option>
                                                 <option value="">Chamber 2</option>
                                                 <option value="">Chamber 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="from-group mb-2">
+                                            <label for="chamber">CNC Power Meter  <span style={{color: 'red'}}>*</span></label>
+                                            <select className="form-control form-control-sm" id="chamber">
+                                                <option value="">Choose</option>
+                                                <option value="">Power Meter</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div className="col-3">
+                                        <div className="from-group mb-2">
+                                            <label for="chamber">Power Factor  <span style={{color: 'red'}}>*</span></label>
+                                            <select className="form-control form-control-sm" id="chamber">
+                                                <option value="">Choose</option>
+                                                <option value="">Power Factor</option>
                                             </select>
                                         </div>
                                     </div>
