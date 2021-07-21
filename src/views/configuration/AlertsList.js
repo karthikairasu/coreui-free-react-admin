@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import CIcon from '@coreui/icons-react';
 import { FaPlus, FaSearch, FaPencilAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
 import '../assets/style.css';
-import Time from './time';
+// import Time from './time';
 
 import {
   CHeader,
@@ -13,20 +13,20 @@ import {
   CHeaderNavLink,
   CSubheader,
   CBreadcrumbRouter,
-  CLink
+  //CLink
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
+// import CIcon from '@coreui/icons-react'
 
 // routes config
 import routes from '../routes'
 
 import { 
   TheHeaderDropdown,
-  TheHeaderDropdownMssg,
-  TheHeaderDropdownNotif,
-  TheHeaderDropdownTasks
+  // TheHeaderDropdownMssg,
+  // TheHeaderDropdownNotif,
+  // TheHeaderDropdownTasks
 }  from './index'
-import { render } from 'enzyme/build';
+//import { render } from 'enzyme/build';
 
 const TheHeader = () => {
   const dispatch = useDispatch()
