@@ -40,7 +40,7 @@ class AddAlerts extends Component {
                                     </div>
                                     <div className="col-3">
                                         <div className="from-group mb-2">
-                                            <label for="chamber">CNC Power Meter  <span style={{color: 'red'}}>*</span></label>
+                                            <label for="chamber">Device  <span style={{color: 'red'}}>*</span></label>
                                             <select className="form-control form-control-sm" id="chamber">
                                                 <option value="">Choose</option>
                                                 <option value="">Power Meter</option>
@@ -49,7 +49,7 @@ class AddAlerts extends Component {
                                     </div>
                                     <div className="col-3">
                                         <div className="from-group mb-2">
-                                            <label for="chamber">Power Factor  <span style={{color: 'red'}}>*</span></label>
+                                            <label for="chamber">Parameter  <span style={{color: 'red'}}>*</span></label>
                                             <select className="form-control form-control-sm" id="chamber">
                                                 <option value="">Choose</option>
                                                 <option value="">Power Factor</option>

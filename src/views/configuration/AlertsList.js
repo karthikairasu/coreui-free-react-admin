@@ -20,6 +20,7 @@ class AlertsList extends Component {
                     <table class="table table-bordered">
                         <thead>
                             <tr className="table-primary">
+                                <th rowSpan="2">Device ID</th>
                                 <th rowSpan="2">Parameter & Description</th>
                                 <th rowSpan="2">Type</th> 
                                 <th colSpan="2">Values</th>
@@ -36,6 +37,7 @@ class AlertsList extends Component {
                         </thead>
                         <tbody>
                             <tr>
+                                <td>10002</td>
                                 <td>Temperature</td>
                                 <td>Minor</td>
                                 <td>38</td>
@@ -46,6 +48,7 @@ class AlertsList extends Component {
                                 <td><Link to="/configuration/EditAlert"><FaPencilAlt /></Link></td>
                             </tr>
                             <tr>
+                                <td>10003</td>
                                 <td>Temperature</td>
                                 <td>Minor</td>
                                 <td>38</td>
