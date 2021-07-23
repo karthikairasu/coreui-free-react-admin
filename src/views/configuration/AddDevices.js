@@ -18,12 +18,6 @@ class AddDevices extends Component {
         //set the changed state.....
         this.setState({countries: this.state.countries});
     }
-    handleChange(e, index){
-        this.state.units[index] = e.target.value;
-
-        //set the changed state.....
-        this.setState({units: this.state.units});
-    }
 
     handleRemove(index){
         // remove an item at the index
