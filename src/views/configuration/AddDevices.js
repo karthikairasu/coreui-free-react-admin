@@ -8,8 +8,7 @@ class AddDevices extends Component {
     }
 
     addCountry(){
-        this.setState({countries: [...this.state.countries, ""]});
-        this.setState({units: [...this.state.units, ""]});
+        this.setState({countries: [...this.state.countries, ""], units: [...this.state.units, ""]});
     }
 
     handleChange(e, index){
@@ -77,16 +76,19 @@ class AddDevices extends Component {
                                             <div className="input-group">
                                             <input type="text" aria-label="" id="sensor" className="form-control form-control-sm" placeholder="Parameter"/>
                                             <input type="text" aria-label="" id="unit" className="form-control form-control-sm" placeholder="Unit"/>
-                                            <button onClick={(e)=>this.addCountry(e)} class="btn btn-info btn-sm" type="button">Add</button>
+                                            <button onClick={(e)=>this.addCountry(e)} class="btn btn-info btn-sm" type="button">+</button>
                                             </div>
                                             {
                                                 this.state.countries.map((country, unit, index)=>{
                                                     return( 
                                                         <div key={index}>
-                                                            <input onChange={(e)=>this.handleChange(e, index)} className="form-control form-control-sm" value={country} placeholder="Parameter"/>
-                                                            <input onChange={(e)=>this.handleChange(e, index)} className="form-control form-control-sm" value={unit} placeholder="unit"/>
-                                                        
-                                                            <button onClick={()=>this.handleRemove(index)} className="btn btn-danger btn-sm">remove</button>
+                                                    
+                                                            <div className="input-group my-1">
+                                                            <input onChange={(e)=>this.handleChange(e, index)} value={country} type="text" aria-label="" id="sensor" className="form-control form-control-sm" placeholder="Parameter"/>
+                                                            <input value={unit} type="text" aria-label="" id="unit" className="form-control form-control-sm" placeholder="Unit"/>
+                                                            
+                                                            <button onClick={()=>this.handleRemove(index)} className="btn btn-danger btn-sm">-</button>
+                                                            </div>
                                                         </div>
                                                     )
                                                 })

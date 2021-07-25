@@ -25,3 +25,11 @@ table tbody td {
   vertical-align: middle !important;
   border: 2px dotted #c6c0f5 !important;
 }
+a {
+  color: #3c4b64;
+  text-decoration: none;
+}
+a:hover {
+  color: #3c4b64;
+  text-decoration: none;
+}

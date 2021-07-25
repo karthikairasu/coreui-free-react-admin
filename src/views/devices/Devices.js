@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Devices = () => {
   return (
@@ -41,6 +42,7 @@ const Devices = () => {
         
         <div className="col-md-6 col-lg-6">
           <div className="card px-2 py-2" style={{}}>
+            <Link to="/devices/DeviceDetails">
             <div className="card-header px-1">
               <div>
                 <strong>Device # 10002</strong>
@@ -72,7 +74,8 @@ const Devices = () => {
                 last update @ 07/13/2021 07:58PM
               </div>
             </div>
-          </div>     
+          </Link> 
+          </div>  
         </div>
         
         <div className="col-md-6 col-lg-6">

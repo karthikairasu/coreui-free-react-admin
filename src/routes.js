@@ -29,6 +29,7 @@ const AddWarehouse = React.lazy(() => import('./views/configuration/AddWarehouse
 const EditWarehouse = React.lazy(() => import('./views/configuration/EditWarehouse'));
 const AboutUs = React.lazy(() => import('./views/aboutus/AboutUs'));
 const Help = React.lazy(() => import('./views/help/Help'));
+const DeviceDetails = React.lazy(() => import('./views/devices/DeviceDetails'));
 
 
 const Jumbotrons = React.lazy(() => import('./views/base/jumbotrons/Jumbotrons'));
@@ -124,7 +125,8 @@ const routes = [
   { path: '/Configuration/AddWarehouse', name: 'AddWarehouse', component: AddWarehouse  },
   { path: '/Configuration/EditWarehouse', name: 'EditWarehouse', component: EditWarehouse  },
   { path: '/aboutus/AboutUs', name: 'AboutUs', component: AboutUs },
-  { path: '/help/Help', name: 'Help', component: Help }
+  { path: '/help/Help', name: 'Help', component: Help },
+  { path: '/devices/DeviceDetails', name: 'DeviceDetails', component: DeviceDetails }
 ];
 
 export default routes;
