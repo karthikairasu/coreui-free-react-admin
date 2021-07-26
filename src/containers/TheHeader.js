@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import logo from '../assets/favicon.png';
 import '../assets/style.css';
 // import Time from './time';
+import '../../node_modules/canvas-gauges/gauge.min.js';
 
 import {
   CHeader,
