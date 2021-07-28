@@ -33,3 +33,9 @@ a:hover {
   color: #3c4b64;
   text-decoration: none;
 }
+#gauge svg g[transform*="translate(18,226.68)"] {
+  display: none;
+}
+#linechart svg g[transform*="translate(18,372.68)"] {
+  display: none;
+}

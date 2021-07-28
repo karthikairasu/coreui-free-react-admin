@@ -61,7 +61,7 @@ const chartData = [
       // Chart Configuration
       chart: {
         //Set the chart caption
-        caption: "Countries With Most Oil Reserves [2017-18]",
+        caption: "Temperature",
         //Set the chart subcaption
         subCaption: "In MMbbl = One Million barrels",
         //Set the x-axis name
@@ -79,42 +79,52 @@ const chartData = [
 
   const chartConfigss = {
     type: 'angulargauge',
-    width: 600,
-    height: 400,
+    width: "100%",
+    height: "100%",
     dataFormat: 'json',
     dataSource: {
         chart: {
-            caption: "Nordstorm's Customer Satisfaction Score for 2017",
-            lowerlimit: "0",
-            upperlimit: "100",
+            caption: "Chamber",
+            lowerlimit: "-50",
+            upperlimit: "50",
             showvalue: "1",
-            numbersuffix: "%",
+            numbersuffix: "°C",
             theme: "fusion",
             showtooltip: "0"
           },
           colorrange: {
             color: [
               {
-                minvalue: "0",
-                maxvalue: "50",
-                code: "#F2726F"
+                minvalue: "-50",
+                maxvalue: "-20",
+                code: "#1F72D6"
               },
               {
-                minvalue: "50",
-                maxvalue: "75",
+                minvalue: "-20",
+                maxvalue: "0",
+                code: "#9FC7F6"
+              },
+              {
+                minvalue: "0",
+                maxvalue: "30",
+                code: "#63C403"
+              },
+              {
+                minvalue: "30",
+                maxvalue: "40",
                 code: "#FFC533"
               },
               {
-                minvalue: "75",
-                maxvalue: "100",
-                code: "#62B58F"
+                minvalue: "40",
+                maxvalue: "50",
+                code: "#F71F0F"
               }
             ]
           },
           dials: {
             dial: [
               {
-                value: "81"
+                value: "41"
               }
             ]
           }
@@ -125,41 +135,64 @@ class DeviceDetails extends Component {
     render() {
         return (
             <div>
-                <div className="card">
-                    <div className="card-header">
-                        <h5><strong>Device Details</strong></h5>
-                    </div>
-                    <div className="card-body">
+              <div className="mx-2" style={{background:"#fff"}}>
+                  <h5 className="p-2"><strong>Device Details</strong></h5>
+              </div>
+              <div className="container-fluid my-2">
+                <div className="row">
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100">
+                      <div className="card-body d-flex align-items-center">
                         <div className="row">
-                            <div className="col-12 col-md-6">
-                                <div className="row">
-                                    <div className="col-6 text-center">
-                                        <h6 className="text-info"><strong>Device # 10002</strong></h6>
-                                        <img src={Device} style={{height:"15vw", width : "auto"}}/>
-                                    </div>
-                                    <div className="col-6">
-                                        <p><strong>Brand and Model :</strong> Ansara</p>
-                                        <p><strong>Warehouse :</strong> Riyadh</p>
-                                        <p><strong>Chamber :</strong> Chamber 1</p>
-                                        <p><strong>Sensor :</strong> Temperture, Humidity, Battery</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6">
-                                
-                            </div>
+                          <div className="col-12 col-md-6 text-center">
+                              <h6 className="text-info"><strong>Device # 10002</strong></h6>
+                              <img src={Device} style={{height:"12vw", width : "auto"}}/>
+                          </div>
+                          <div className="col-12 col-md-6">
+                              <p><strong>Brand and Model :</strong> Ansara</p>
+                              <p><strong>Warehouse :</strong> Riyadh</p>
+                              <p><strong>Chamber :</strong> Chamber 1</p>
+                              <p><strong>Sensor :</strong> Temperture, Humidity, Battery</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12 col-md-6">
+                    <div className="card h-100">
+                      <div className="card-body">
+                        <ReactFCC id="gauge" {...chartConfigss} />  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="row">
+                  <div className="col-12 col-md-6 d-flex align-items-center" style={{background:"#fff"}}>
+                    <div className="row">
+                        <div className="col-6 text-center py-2">
+                            <h6 className="text-info"><strong>Device # 10002</strong></h6>
+                            <img src={Device} style={{height:"12vw", width : "auto"}}/>
+                        </div>
+                        <div className="col-6 py-2">
+                            <p><strong>Brand and Model :</strong> Ansara</p>
+                            <p><strong>Warehouse :</strong> Riyadh</p>
+                            <p><strong>Chamber :</strong> Chamber 1</p>
+                            <p><strong>Sensor :</strong> Temperture, Humidity, Battery</p>
                         </div>
                     </div>
-                </div>
+                  </div>
+                  <div className="col-12 col-md-6" style={{background:"#fff"}}>
+                    <ReactFCC id="gauge" {...chartConfigss} />
+                  </div>
+                </div> */}
+              </div>
                 <div className="card">
                     <div className="col-12 col-md-12">
-                    <ReactFC {...chartConfigs} />
+                    <ReactFC id="linechart" {...chartConfigs} />
                     </div>
                 </div>
                 <div className="card">
-                    <div className="col-12 col-md-12">
-                    <ReactFCC {...chartConfigss} />
-                    </div>
+                    
                 </div>
             </div>
         )
