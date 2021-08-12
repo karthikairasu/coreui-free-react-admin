@@ -142,7 +142,7 @@ class DeviceDetails extends Component {
                 <div className="row">
                   <div className="col-12 col-md-6">
                     <div className="card h-100">
-                      <div className="card-body d-flex align-items-center">
+                      <div className="card-body d-flex align-items-center justify-content-center">
                         <div className="row">
                           <div className="col-12 col-md-6 text-center">
                               <h6 className="text-info"><strong>Device # 10002</strong></h6>
@@ -187,9 +187,11 @@ class DeviceDetails extends Component {
                 </div> */}
               </div>
                 <div className="card">
+                  <div className="row">
                     <div className="col-12 col-md-12">
                     <ReactFC id="linechart" {...chartConfigs} />
                     </div>
+                  </div>
                 </div>
                 <div className="card">
                     

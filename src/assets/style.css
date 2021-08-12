@@ -39,3 +39,8 @@ a:hover {
 #linechart svg g[transform*="translate(18,372.68)"] {
   display: none;
 }
+#gauge svg rect,
+#gauge svg {
+  fill: transparent;
+  background-color: transparent !important;
+}
