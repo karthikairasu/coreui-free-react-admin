@@ -63,7 +63,7 @@ const chartData = [
         //Set the chart caption
         caption: "Temperature",
         //Set the chart subcaption
-        subCaption: "In MMbbl = One Million barrels",
+        subCaption: "",
         //Set the x-axis name
         xAxisName: "Country",
         //Set the y-axis name
@@ -84,7 +84,7 @@ const chartData = [
     dataFormat: 'json',
     dataSource: {
         chart: {
-            caption: "Chamber",
+            caption: "",
             lowerlimit: "-50",
             upperlimit: "50",
             showvalue: "1",
@@ -141,27 +141,58 @@ class DeviceDetails extends Component {
               <div className="container-fluid my-2">
                 <div className="row">
                   <div className="col-12 col-md-6">
-                    <div className="card h-100">
-                      <div className="card-body d-flex align-items-center justify-content-center">
+                    <div className="card">
+                      <div className="card-body">
                         <div className="row">
-                          <div className="col-12 col-md-6 text-center">
-                              <h6 className="text-info"><strong>Device # 10002</strong></h6>
-                              <img src={Device} style={{height:"12vw", width : "auto"}}/>
+                          <div className="col-12 col-md-6 d-flex align-items-center justify-content-center" style={{height:'275px'}}>
+                            <div>
+                              <h6 className="text-info text-center py-2"><strong>Device # 10002</strong></h6>
+                              <img id="device_img" alt="Device" src={Device} style={{height:"13vw", width : "auto"}}/>
+                            </div>
                           </div>
-                          <div className="col-12 col-md-6">
+                          <div className="col-12 col-md-6 d-flex align-items-center justify-content-center">
+                            <div>
                               <p><strong>Brand and Model :</strong> Ansara</p>
                               <p><strong>Warehouse :</strong> Riyadh</p>
                               <p><strong>Chamber :</strong> Chamber 1</p>
                               <p><strong>Sensor :</strong> Temperture, Humidity, Battery</p>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="col-12 col-md-6">
-                    <div className="card h-100">
+                    <div className="card">
                       <div className="card-body">
-                        <ReactFCC id="gauge" {...chartConfigss} />  
+                         
+                      <div className="row">
+                      <div className="col-12" style={{height:'220px'}}>
+                        <ReactFCC id="gauge" {...chartConfigss} /> 
+                        </div>
+                        <div className="col-12">
+                          <div className="row">
+                          <div className="col-4 px-0">
+                          <div className="tem text-center">
+                            <p className="mb-0"><i className="fas fa-thermometer-half"></i> <strong>TEMP</strong></p>
+                            <h5><strong><span id="temVal">41.00</span>°C</strong></h5>
+                            </div>
+                          </div>
+                          <div className="col-4 px-0">
+                            <div className="hum text-center">
+                                <p className="mb-0"><i className="fas fa-tint"></i> <strong>HUMID</strong></p>
+                                <h5><strong><span id="humVal">53.39</span>% RH</strong></h5>
+                            </div>
+                          </div>
+                          <div className="col-4 px-0">
+                            <div className="bat text-center">
+                                <p className="mb-0"><i className="fas fa-car-battery"></i> <strong>Battery</strong></p>
+                                <h5><strong>30%</strong></h5>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -186,6 +217,7 @@ class DeviceDetails extends Component {
                   </div>
                 </div> */}
               </div>
+              <div className="col-12">
                 <div className="card">
                   <div className="row">
                     <div className="col-12 col-md-12">
@@ -193,9 +225,7 @@ class DeviceDetails extends Component {
                     </div>
                   </div>
                 </div>
-                <div className="card">
-                    
-                </div>
+              </div>
             </div>
         )
     }

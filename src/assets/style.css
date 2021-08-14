@@ -33,7 +33,10 @@ a:hover {
   color: #3c4b64;
   text-decoration: none;
 }
-#gauge svg g[transform*="translate(18,226.68)"] {
+#gauge {
+  text-align: center !important;
+}
+#gauge svg g[transform*="translate(18,192.68)"] {
   display: none;
 }
 #linechart svg g[transform*="translate(18,372.68)"] {
@@ -43,4 +46,40 @@ a:hover {
 #gauge svg {
   fill: transparent;
   background-color: transparent !important;
+}
+.bat h5 {
+  color: #4fd54f;
+  text-align: center;
+  padding: 4px 0px;
+  font-family: digital-7;
+  font-size: 18px;
+}
+.bat i {
+  color: #4fd54f;
+}
+.hum h5 {
+  color: #2196f3;
+  text-align: center;
+  padding: 4px 0px;
+  font-family: digital-7;
+  font-size: 18px;
+}
+.hum i {
+  color: #2196f3;
+}
+.tem h5 {
+  color: #fc6180;
+  text-align: center;
+  padding: 4px 0px;
+  font-family: digital-7;
+  font-size: 18px;
+}
+.tem i {
+  color: #fc6180;
+}
+@media (max-width: 767px) {
+  #device_img {
+    width: 25vw !important;
+    height: auto !important;
+  }
 }
