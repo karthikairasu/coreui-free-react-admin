@@ -2,80 +2,15 @@ import React, { Component } from 'react';
 import { FaPlus, FaSearch, FaPencilAlt, FaTemperatureHigh } from "react-icons/fa";
 import Device  from '../../assets/device.png';
 
-import ReactFC from "react-fusioncharts";
-import FusionCharts from "fusioncharts";
-import Column2D from "fusioncharts/fusioncharts.charts";
-import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-
 import FusionChartss from 'fusioncharts';
 import Widgets from 'fusioncharts/fusioncharts.widgets';
 import ReactFCC from 'react-fusioncharts';
 import FusionThemee from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import {
+  CChartLine
+} from '@coreui/react-chartjs';
 
 ReactFCC.fcRoot(FusionChartss, Widgets, FusionThemee);
-
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
-
-const chartData = [
-    {
-      label: "Venezuela",
-      value: "290"
-    },
-    {
-      label: "Saudi",
-      value: "260"
-    },
-    {
-      label: "Canada",
-      value: "180"
-    },
-    {
-      label: "Iran",
-      value: "140"
-    },
-    {
-      label: "Russia",
-      value: "115"
-    },
-    {
-      label: "UAE",
-      value: "100"
-    },
-    {
-      label: "US",
-      value: "30"
-    },
-    {
-      label: "China",
-      value: "30"
-    }
-  ];
-  
-  // STEP 3 - Creating the JSON object to store the chart configurations
-  const chartConfigs = {
-    type: "column2d", // The chart type
-    width: "700", // Width of the chart
-    height: "400", // Height of the chart
-    dataFormat: "json", // Data type
-    dataSource: {
-      // Chart Configuration
-      chart: {
-        //Set the chart caption
-        caption: "Temperature",
-        //Set the chart subcaption
-        subCaption: "",
-        //Set the x-axis name
-        xAxisName: "Country",
-        //Set the y-axis name
-        yAxisName: "Reserves (MMbbl)",
-        numberSuffix: "K",
-        //Set the theme for your chart
-        theme: "fusion"
-      },
-      // Chart Data
-      data: chartData
-    }
-  };
 
   const chartConfigss = {
     type: 'angulargauge',
@@ -217,11 +152,40 @@ class DeviceDetails extends Component {
                   </div>
                 </div> */}
               </div>
-              <div className="col-12">
+              <div className="col-6">
                 <div className="card">
                   <div className="row">
                     <div className="col-12 col-md-12">
-                    <ReactFC id="linechart" {...chartConfigs} />
+                    <div className="card border-0">
+                      <div className="card-header">
+                        Line Chart
+                      </div>
+                      <div className="card-body">
+                        <CChartLine
+                          datasets={[
+                            {
+                              label: 'Temperature',
+                              backgroundColor: 'rgb(228,102,81,0.9)',
+                              data: [30, 39, 10, 50, 30, 40, 35]
+                            },
+                            {
+                              label: 'Humidity',
+                              backgroundColor: 'rgb(0,216,255,0.9)',
+                              data: [39, 45, 40, 35, 40, 20, 45]
+                            }
+                          ]}
+                          options={{
+                            tooltips: {
+                              enabled: true
+                            }
+                          }}
+                          labels={[
+                            '12.00', '12.30', '1.00', '1.30',
+                            '2.00', '2.30', '3.00'
+                          ]}
+                        />
+                      </div>
+                    </div>
                     </div>
                   </div>
                 </div>
